@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+.page-one {
+  background-color: #fd7e49;
+  background-image: linear-gradient(#fa7552, #f97453, #ed6069, #e85478, #e6517b);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  text-align: center;
+  
+}
