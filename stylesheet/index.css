@@ -3,14 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+  html {
+    min-height: 100vh;
+  }
 
   /*Tinder Profile*/
 
 .page-one {
   background-color: #fd7e49;
   background-image: linear-gradient(#fa7552, #f97453, #ed6069, #e85478, #e6517b);
-  background-size: cover;
-  background-attachment: fixed;
   margin: auto;
   text-align: center;
   }
@@ -21,14 +22,16 @@
     margin: 15px auto;
     background-attachment: fixed;
     max-width: 440px;
-    border-radius: 5% 5% 5% 5%;
+    border-radius: 24px;
     border-style: solid;
     border-color: black;
     box-sizing: content-box;
+    overflow: hidden;
   }
 
   .img-page-one {
-    border-radius: 5% 5% 0 0;
+    width: 100%;
+    height: auto;
   }
 
   .name-age {
