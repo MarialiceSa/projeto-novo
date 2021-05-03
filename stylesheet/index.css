@@ -16,6 +16,10 @@
   text-align: center;
   }
 
+  .data {
+    font-family: 'New Tegomin', serif;
+  }
+
   .tinder-box {
     background-color: rgb(235, 233, 233);
     padding: 0px 0 35px 0;
