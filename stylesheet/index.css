@@ -20,6 +20,31 @@
     font-family: 'New Tegomin', serif;
   }
 
+  .tinder-container {
+    background-color: rgb(235, 233, 233);
+    max-width: 500px;
+    margin: auto;
+    padding: 15px 0px 160px 0px;
+    display: inline-block;
+  }
+
+  .icon-chat {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0px 10px 0px 75px;
+  }
+
+  .icon-settings {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0px 75px 0px 10px;
+  }
+
+.icons-tinder {
+  max-width: 150px;
+  margin: 5px 20px 5px;
+}
+
   .tinder-box {
     background-color: rgb(235, 233, 233);
     padding: 0px 0 35px 0;
@@ -30,7 +55,9 @@
     border-style: solid;
     border-color: black;
     box-sizing: content-box;
+    border-width: thin;
     overflow: hidden;
+    position: relative;
   }
 
   .img-page-one {
