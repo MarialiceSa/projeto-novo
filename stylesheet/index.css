@@ -23,7 +23,7 @@
   .tinder-container {
     background-color: rgb(235, 233, 233);
     max-width: 500px;
-    margin: auto;
+    margin: auto auto 20px;
     padding: 15px 0px 160px 0px;
     display: inline-block;
   }
@@ -57,7 +57,9 @@
     box-sizing: content-box;
     border-width: thin;
     overflow: hidden;
-    position: relative;
+    border-bottom: 5px rgb(49, 49, 49) double;
+    border-right: 5px rgb(49, 49, 49) double;
+
   }
 
   .img-page-one {
@@ -85,3 +87,9 @@
     margin-left: 10px;
   }
 
+  .reload {
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    box-shadow: inset black 10px;
+  }
