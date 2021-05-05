@@ -132,3 +132,24 @@
     max-width: 40px;
     max-height: 40px;
   }
+
+  /*It's a Match*/
+  
+  .match {
+    max-height: 100vh;
+    max-width: 100vh;
+    background-image: url(../images/images-match/background-match.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  .deu-match {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  
