@@ -154,8 +154,15 @@
   }
   
   .match-text {
-    margin: 50px 28vw;
+    margin: 50px 28vw 20px;
     width: 550px;
+  }
+
+  .match-phrase {
+    color: rgb(248, 237, 237);
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
   }
 
   .match-photo-will {
@@ -164,7 +171,7 @@
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
-    margin: 0px 20px 0px 32vw;
+    margin: 20px 20px 75px 34vw;
   }
 
   .match-photo-maria {
@@ -173,5 +180,25 @@
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
-    margin: 0px ;
+    margin-bottom: 75px ;
+    margin-top: 20px;
+  }
+
+  .continue-button {
+    background: linear-gradient(90deg, rgba(253,126,73,1) 0%, rgba(237,96,105,1) 70%, rgba(230,81,123,1) 100%);
+    width: 300px;
+    height: 100px;
+    border-radius: 25px;
+    text-decoration: none;
+    color:  rgb(248, 237, 237);
+    padding: 12px 50px;
+    font-size: 14px;
+    margin-left: 42vw;
+    margin-top: 50px;
+  }
+
+  .continue-button:hover {
+    color: rgb(61, 55, 55);
+    transition: .2s;
+
   }
