@@ -213,7 +213,7 @@
   .chat-container {
   background-color: rgb(235, 233, 233);
   height: fit-content;
-  width: fit-content;
+  width: 638px;
   display: flex;
   margin: auto;
   padding-right: 20px;
@@ -276,9 +276,9 @@
   .chat-body {
     background-color: rgb(235, 233, 233);
     height: 515px;
-    width: auto;
+    width: 638px;
     padding: 50px 20px;
-    margin: 0px 440px;
+    margin: 0px 364px;
   }
 
   .date-chat {
@@ -362,15 +362,11 @@
 /*Polaroid*/
 
 ..polaroid-container {
-  width: 50vw;
-  height: 50vh;
+  max-width: 50px;
+  max-height: 50px;
   padding: 40px auto;
   margin: auto;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-column-gap: none;  
-  grid-row-gap: 40px;
+
 }
 
 .polaroid-frame {
@@ -378,9 +374,8 @@
   padding: 15px 15px 30px;
   border-style: solid;
   border-color: rgb(228, 223, 223);
-  grid-column-start: 2;
-  grid-column-end: 3;
   overflow-y: auto;
+  overflow: hidden;
 }
 
 .photo {
