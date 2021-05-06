@@ -215,7 +215,7 @@
   height: fit-content;
   width: fit-content;
   display: flex;
-  margin-left: 360px;
+  margin: auto;
   padding-right: 20px;
   padding-bottom: 20px;
   border-bottom: 4px solid rgb(114 153 224 / 15%); 
@@ -271,4 +271,37 @@
     border-radius: 100%;
     margin: 4px 0px 4px 0px;
     background-color: #f06463;
+  }
+
+  .chat-body {
+    background-color: rgb(235, 233, 233);
+    height: fit-content;
+    width: auto;
+    padding: 50px 20px;
+    margin: 0px 441px;
+  }
+
+  .date-chat {
+    padding: 0 10px 10px;
+    color: rgb(131, 127, 127);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    text-align: center;
+  }
+
+  .first-message {
+    background-color: #e5e5e5;
+    color: rgb(131, 127, 127);
+    border-radius: 25px 25px 25px 0px ;
+    width: fit-content;
+    padding: 12px;
+  }
+
+  .first-answer {
+    background-color: #21b9fc;
+    color: rgb(235, 233, 233);
+    border-radius: 25px 25px 0px 25px;
+    max-width: 280px;
+    padding: 12px;
+    margin-left: 320px;
   }
