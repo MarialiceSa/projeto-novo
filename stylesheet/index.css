@@ -385,7 +385,7 @@ position: relative;
 
 @keyframes andar {
   50% {
-    left: 800px;
+    left: 85vw;
   }
 }
 
@@ -409,15 +409,16 @@ position: relative;
 
 .photo {
     width: 300px;
-    min-height: 400px;
+    max-height: 400px;
     object-fit: cover;
     opacity: 0;
     transition: 1.5s;
+
 }
 
 .fade-photo {
   width: 300px;
-  min-height: 400px;
+  max-height: 400px;
   cursor: pointer;
   background-color: black;
 }
