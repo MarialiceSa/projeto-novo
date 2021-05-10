@@ -411,7 +411,21 @@ position: relative;
     width: 300px;
     min-height: 400px;
     object-fit: cover;
+    opacity: 0;
+    transition: 1.5s;
 }
+
+.fade-photo {
+  width: 300px;
+  min-height: 400px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.fade-photo:hover .photo {
+  opacity: 1;
+}
+
 
 .footer {
   display: flex;
