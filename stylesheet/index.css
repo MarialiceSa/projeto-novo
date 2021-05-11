@@ -354,7 +354,7 @@
   }
 
   .send {
-  margin-left: 280px;
+  margin-left: 202px;
   margin-right: 0;
   font-weight: bolder;
   color: rgb(114 153 224 / 45%);
@@ -379,8 +379,9 @@ position: relative;
   background: initial;
 }
 
-.kombi-animator:focus .kombi {
-  animation: andar 8s;
+.kombi {
+animation: andar 10s;
+z-index: 1;
 }
 
 @keyframes andar {
@@ -400,8 +401,9 @@ color: white;
 font-family: 'Dancing Script', cursive;
 font-size: 50px;
 margin: 60px 0px 0px 210px;
-animation: fade 10s;
+animation: fade 4s .8s;
 opacity: 0;
+z-index: 0;
 }
 
 .kombi-text-1 {
@@ -411,7 +413,7 @@ opacity: 0;
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
   margin: 60px 0px 0px 10px;
-  animation: fade 10s .4s;
+  animation: fade 4s 1s;
   opacity: 0;
   }
 
@@ -422,7 +424,7 @@ opacity: 0;
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
     margin: 60px 0px 0px 10px;
-    animation: fade 10s .8s;
+    animation: fade 4s 1.2s;
     opacity: 0;
     }
 
@@ -433,7 +435,7 @@ opacity: 0;
       font-family: 'Dancing Script', cursive;
       font-size: 50px;
       margin: 60px 0px 0px 10px;
-      animation: fade 10s 1.2s;
+      animation: fade 4s 1.4s;
       opacity: 0;
       }
 
@@ -444,7 +446,7 @@ opacity: 0;
         font-family: 'Dancing Script', cursive;
         font-size: 50px;
         margin: 60px 0px 0px 10px;
-        animation: fade 10s 1.6s;
+        animation: fade 4s 1.6s;
         opacity: 0;
         }
 
@@ -455,7 +457,7 @@ opacity: 0;
           font-family: 'Dancing Script', cursive;
           font-size: 50px;
           margin: 60px 0px 0px 10px;
-          animation: fade 10s 2s;
+          animation: fade 4s 1.8s;
           opacity: 0;
           }
 
@@ -466,7 +468,7 @@ opacity: 0;
             font-family: 'Dancing Script', cursive;
             font-size: 50px;
             margin: 60px 0px 0px 10px;
-            animation: fade 10s 2.4s;
+            animation: fade 4s 2s;
             opacity: 0;
             }
 
@@ -477,7 +479,7 @@ opacity: 0;
               font-family: 'Dancing Script', cursive;
               font-size: 50px;
               margin: 60px 0px 0px 10px;
-              animation: fade 10s 2.8s;
+              animation: fade 4s 2.2s;
               opacity: 0;
             }
 
@@ -485,9 +487,9 @@ opacity: 0;
   0% {
     opacity: 0;
   }
- 50%{
-   opacity: 1;
- }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
   }
@@ -507,22 +509,33 @@ opacity: 0;
 .polaroid-frame {
   background-color: rgb(235, 233, 233);
   height: auto;
-  padding: 20px 20px 60px 20px;
+  padding: 20px 20px 30px 20px;
   margin: 24px auto 500px;
 }
 
 .photo {
     width: 300px;
     max-height: 400px;
+    min-height: 400px;
     object-fit: cover;
     opacity: 0;
     transition: 1.5s;
+}
 
+.caption-polaroid {
+  margin: auto;
+  font-family: 'Indie Flower', cursive;
+  color: midnightblue;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  max-width: 300px;
 }
 
 .fade-photo {
   width: 300px;
   max-height: 400px;
+  min-height: 400px;
   cursor: pointer;
   background-color: black;
 }
