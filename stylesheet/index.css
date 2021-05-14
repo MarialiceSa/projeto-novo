@@ -595,3 +595,47 @@ padding-right: 70px;
 
 /*Letter*/
 
+.back-letter {
+  background-image: url(../images/images-letter/background.jpg);
+  min-height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  max-width: fit-content;
+  margin:  auto;
+  padding: 10px;
+}
+
+.letter {
+  max-width: 600px;
+  font-size: 14px;
+  font-family: 'Cairo', sans-serif;
+  text-align: justify;
+  font-weight: bold;
+  margin: auto;
+  color: rgb(20, 109, 20);
+}
+
+.letter-h4 {
+  max-width: 600px;
+  font-size: 16px;
+  font-family: 'Amatic SC', cursive;
+  margin: auto;
+  color: rgb(182, 42, 112);
+  text-align: center;
+}
+
+.letter-h3 {
+  max-width: 600px;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+  margin: auto;
+  color: rgb(182, 42, 112);
+  text-align: center;
+}
+
