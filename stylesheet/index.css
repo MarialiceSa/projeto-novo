@@ -594,21 +594,104 @@ padding-right: 70px;
 }
 
 /*Letter*/
-
 .back-letter {
   background-image: url(../images/images-letter/background.jpg);
   min-height: 100vh;
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter-container {
+height: 50vh;
+width: 100vw;
+display: inline-flex;
+overflow: hidden;
+margin-left: 400px;
+
+}
+
+.left-side {
+  height: 50vh;
+  width: 300px;
+  background-color: #e5e5e5;
+  position: absolute;
+  border-right: 1px solid rgb(185, 184, 184);
+}
+.right-side {
+  height: 50vh;
+  width: 300px;
+  background-color: #e5e5e5;
+  position: absolute;
+  margin-left: 300px;
+  border-left: 1px solid rgb(185, 184, 184);
+}
+
+.bottom-side {
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 30vh solid #dedede;
+  position: absolute;
+  margin-top: 20vh
+}
+
+.top-side {
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 30vh solid #dad6d6;
+  position: absolute;
+}
+
+.selo {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.button-selo {
+border: 0;
+background: initial;
+padding: 0;
+position: absolute;
+margin: 146px 242px;
+}
+
+.button-selo:focus .selo {
+  animation: open-selo .2s;
+}
+
+@keyframes open-selo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .text-container {
-  min-height: 100vh;
+  max-height: 50vh;
   background-color: #e5e5e5;
-  max-width: fit-content;
-  margin:  auto;
+  width: 600px;
   padding: 10px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.text-container::-webkit-scrollbar {
+  width: 15px;
+}
+
+.text-container::-webkit-scrollbar-thumb {
+  background-color: hotpink;
+  border-radius: 25px;
 }
 
 .letter {
