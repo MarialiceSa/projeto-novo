@@ -608,8 +608,7 @@ padding-right: 70px;
 .letter-container {
 height: 50vh;
 width: 100vw;
-display: inline-flex;
-overflow: hidden;
+display: flex;
 margin-left: 400px;
 
 }
@@ -618,16 +617,17 @@ margin-left: 400px;
   height: 50vh;
   width: 300px;
   background-color: #e5e5e5;
-  position: absolute;
-  border-right: 1px solid rgb(185, 184, 184);
+  position: relative;
+  margin-left:-300px ;
+  border-left: 1px solid rgb(185, 184, 184);
 }
 .right-side {
   height: 50vh;
   width: 300px;
   background-color: #e5e5e5;
-  position: absolute;
-  margin-left: 300px;
-  border-left: 1px solid rgb(185, 184, 184);
+  position: relative;
+  margin-left: -600px;
+  border-right: 1px solid rgb(185, 184, 184);
 }
 
 .bottom-side {
@@ -636,7 +636,8 @@ margin-left: 400px;
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   border-bottom: 30vh solid #dedede;
-  position: absolute;
+  position: relative;
+  margin-left: -300px;
   margin-top: 20vh
 }
 
@@ -646,13 +647,18 @@ margin-left: 400px;
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   border-top: 30vh solid #dad6d6;
-  position: absolute;
+  position: relative;
+  margin-left: -600px;
 }
+
+
+
 
 .selo {
   height: 100px;
   width: 100px;
   object-fit: cover;
+  opacity: 1;
 }
 
 .button-selo {
@@ -660,18 +666,16 @@ border: 0;
 background: initial;
 padding: 0;
 position: absolute;
-margin: 146px 242px;
+margin: 140px 245px;
+
 }
 
 .button-selo:focus .selo {
-  animation: open-selo .2s;
+  animation: open-selo .3s ;
 }
 
 @keyframes open-selo {
-  from {
-    opacity: 1;
-  }
-  to {
+  100% {
     opacity: 0;
   }
 }
