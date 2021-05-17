@@ -610,8 +610,74 @@ height: 50vh;
 width: 100vw;
 display: flex;
 margin-left: 400px;
+}
+
+.content {
+  margin: 128px -360px;
+  position: absolute;
+}
+
+.content::after {
+  content: url(../images/images-letter/selo.png);
+}
+
+#toggle:checked ~ .content::after {
+  content: "";
+}
+
+.hidden {
+opacity: 0;
+position: absolute;
+margin: 170px -305px;
+}
+
+
+.top-side{
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 30vh solid #dad6d6;
+  position: relative;
+  margin-left: -600px;
+  margin-top: -18px;
+  opacity: 1;
 
 }
+
+.top-side::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 30vh solid #dad6d6;
+  position: absolute;
+  margin-left: -299px;
+  margin-top: -394px;
+  opacity: 0;
+}
+
+#top:checked ~ .top-side::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 30vh solid #dad6d6;
+  position: absolute;
+  margin-left: -299px;
+  margin-top: -394px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 .left-side {
   height: 50vh;
@@ -639,45 +705,6 @@ margin-left: 400px;
   position: relative;
   margin-left: -300px;
   margin-top: 20vh
-}
-
-.top-side {
-  width: 0;
-  height: 0;
-  border-left: 300px solid transparent;
-  border-right: 300px solid transparent;
-  border-top: 30vh solid #dad6d6;
-  position: relative;
-  margin-left: -600px;
-}
-
-
-
-
-.selo {
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-  opacity: 1;
-}
-
-.button-selo {
-border: 0;
-background: initial;
-padding: 0;
-position: absolute;
-margin: 140px 245px;
-
-}
-
-.button-selo:focus .selo {
-  animation: open-selo .3s ;
-}
-
-@keyframes open-selo {
-  100% {
-    opacity: 0;
-  }
 }
 
 .text-container {
