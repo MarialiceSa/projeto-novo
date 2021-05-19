@@ -44,12 +44,28 @@
     margin: 50px 50px 0;
   }
 
+  .link-page2 {
+    content: url(../images/images-door/pngegg.png);
+    opacity: 1;
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-top: -150px;
+    opacity: 0;
+    transition: .4s cubic-bezier(0.38, 0.22, 0.67, 0.81);
+  }
+
+  .link-page2:hover {
+    opacity: 1;
+  }
+
   #one:checked ~ .door-1 {
     content: url(../images/images-door/door-open16.png);
     height: 340px;
     width: auto;
     margin: 35px 10px 0px 0px;
   }
+
 
   .one-check {
     opacity: 0;
